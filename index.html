@@ -270,28 +270,33 @@
               <!-- DEMO SLOT: pipelines can't "run" live on a static page — show the output instead. -->
               <!-- Swap this for a chart image (predicted vs actual price, feature importance) or an embedded interactive chart. -->
               <div class="demo-slot">
-                <div class="demo-label">
-                  Actual vs Predicted plot, Residual plot and Cross-Validation
-                  scores
+                <div class="demo-label">Model results</div>
+                <div class="demo-img-grid">
+                  <figure>
+                    <img
+                      src="images/melbourne-housing-actual-vs-predicted.png"
+                      alt="Actual vs Predicted plot"
+                      loading="lazy"
+                    />
+                    <figcaption>Actual vs. predicted price</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/melbourne-housing-residual-plot.png"
+                      alt="Residual plot"
+                      loading="lazy"
+                    />
+                    <figcaption>Residual plot</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/melbourne-housing-cross-validation-scores.png"
+                      alt="Validation scores"
+                      loading="lazy"
+                    />
+                    <figcaption>Cross-validation scores</figcaption>
+                  </figure>
                 </div>
-                <img
-                  src="images/melbourne-housing-actual-vs-predicted.png"
-                  alt="Actual vs Predicted plot"
-                  style="width: 100%; margin-top: 12px"
-                  loading="lazy"
-                />
-                <img
-                  src="images/melbourne-housing-residual-plot.png"
-                  alt="Residual plot"
-                  style="width: 100%; margin-top: 12px"
-                  loading="lazy"
-                />
-                <img
-                  src="images/melbourne-housing-cross-validation-scores.png"
-                  alt="Validation scores"
-                  style="width: 100%; margin-top: 12px"
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>
@@ -367,10 +372,57 @@
                 <span class="chip">ETL</span>
                 <span class="metric">6 OLAP queries</span>
               </div>
-              <!-- DEMO SLOT: show a couple of the actual OLAP query results as a chart or table screenshot -->
               <div class="demo-slot">
-                <div class="demo-label">
-                  demo — add a chart/screenshot of your OLAP query results here
+                <div class="demo-label">OLAP query results</div>
+                <div class="demo-img-grid">
+                  <figure>
+                    <img
+                      src="images/tior-games-net-sales.png"
+                      alt="OLAP query result: net sales"
+                      loading="lazy"
+                    />
+                    <figcaption>Net sales</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/tior-games-total-merch-sales.png"
+                      alt="OLAP query result: total merchandise sales"
+                      loading="lazy"
+                    />
+                    <figcaption>Total merch sales</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/tior-games-ticket-refunds.png"
+                      alt="OLAP query result: ticket refunds"
+                      loading="lazy"
+                    />
+                    <figcaption>Ticket refunds</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/tior-games-promo-performance.png"
+                      alt="OLAP query result: promo performance"
+                      loading="lazy"
+                    />
+                    <figcaption>Promo performance</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/tior-games-avg-game-duration.png"
+                      alt="OLAP query result: average game duration"
+                      loading="lazy"
+                    />
+                    <figcaption>Avg. game duration</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/tior-games-game-interruptions.png"
+                      alt="OLAP query result: game interruptions"
+                      loading="lazy"
+                    />
+                    <figcaption>Game interruptions</figcaption>
+                  </figure>
                 </div>
               </div>
             </div>
@@ -407,10 +459,66 @@
                 <span class="chip">SQL</span>
                 <span class="metric">2 fact tables built</span>
               </div>
-              <!-- DEMO SLOT: a schema diagram of the Galaxy schema, or a chart of the ROI/campaign insights it produced -->
               <div class="demo-slot">
-                <div class="demo-label">
-                  demo — add a schema diagram or campaign-insight chart here
+                <div class="demo-label">Galaxy schema (ERD)</div>
+                <img
+                  src="images/smartclick-galaxy-schema.png"
+                  alt="SmartClick data warehouse Galaxy schema ERD"
+                  style="width: 100%; margin-top: 12px"
+                  loading="lazy"
+                />
+              </div>
+              <div class="demo-slot">
+                <div class="demo-label">Campaign &amp; ROI insights</div>
+                <div class="demo-img-grid">
+                  <figure>
+                    <img
+                      src="images/smartclick-top-marketing-performance.png"
+                      alt="Top marketing performance campaigns query result"
+                      loading="lazy"
+                    />
+                    <figcaption>Top marketing performance campaigns</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/smartclick-campaign-channel-performance.png"
+                      alt="Campaign performance by reach channel query result"
+                      loading="lazy"
+                    />
+                    <figcaption>Campaign performance by channel</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/smartclick-impressions-by-channel.png"
+                      alt="Total impressions by channel query result"
+                      loading="lazy"
+                    />
+                    <figcaption>Impressions by channel</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/smartclick-items-by-category.png"
+                      alt="Items viewed and purchased by product category query result"
+                      loading="lazy"
+                    />
+                    <figcaption>Items by product category</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/smartclick-avg-items-purchased.png"
+                      alt="Average items purchased per consumer query result"
+                      loading="lazy"
+                    />
+                    <figcaption>Avg. items purchased per consumer</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/smartclick-top-customers.png"
+                      alt="Top customers by checkout value query result"
+                      loading="lazy"
+                    />
+                    <figcaption>Top customers by checkout value</figcaption>
+                  </figure>
                 </div>
               </div>
             </div>
@@ -653,6 +761,11 @@
         <span>built with care</span>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">close ✕</button>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
 
     <script src="script.js"></script>
   </body>
